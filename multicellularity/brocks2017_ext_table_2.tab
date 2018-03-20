@@ -1,49 +1,48 @@
 site	location	source	formation	age	sample	TOC	depth	steranes	TA	S/H	24-ipc	24-npc	cryo
-Amadeus Basin	Northern Territory, Australia	Drillcore BRO5	Aralka Formation	659	11J005i	0.31	242.2	100:00:00	nm	0.00558	0	0	0
-Amadeus Basin	Northern Territory, Australia	Drillcore BRO5	Aralka Formation	659	13J0901i	<0.50	468.56	100:00:00	nm	0.0009	0	0	0
-Amadeus Basin	Northern Territory, Australia	Drillcore BRO5	Aralka Formation	659	12J019i2	NA	471.5	100:00:00	nm	0.0029	0	0	0
-Amadeus Basin	Northern Territory, Australia	Drillcore BRO5	Aralka Formation	659	13J0902i	<0.50	476.2	100:00:00	100:00:00	0.0096	0	0	0
-Amadeus Basin	Northern Territory, Australia	Drillcore BRO5	Aralka Formation	659	8060271	8	477.5	0:0:0i)	100:00:00	0	0	0	0
-Amadeus Basin	Northern Territory, Australia	Drillcore BRO5	Aralka Formation	659	13J09031	NA	480.45	100:00:00	100:00:00	0.012	0	0	0
-Amadeus Basin	Northern Territory, Australia	Drillcore BRO5	Aralka Formation	659	1306029i	0.09	481.85	100:00:00	100:00:00	0	0	0	0
-Amadeus Basin	Northern Territory, Australia	Drillcore BRO5	Watiara Formation, Finke Beds	750	11J0211	<0.5	573.06	100:00:00	73:27:00	0.0034	0	0	0
-Amadeus Basin	Northern Territory, Australia	Drillcore BRO5	Watiara Formation, Finke Beds	750	13J717i	NA	585.2	100:00:00	nm	0.003	0	0	0
-Amadeus Basin	Northern Territory, Australia	Drillcore BRO5	Johnnys Creek Formation, Bitter Springs Group	820	111038i	<0.5	762.18	0:0:0	100:0:di	0.0	0	0	0
-Amadeus Basin	Northern Territory, Australia	Drillcore BRO5	Johnnys Creek Formation, Bitter Springs Group	820	131718i	NA	808.20	100:0:0	nm	0.0065	0	0	0
-Amadeus Basin	Northern Territory, Australia	Drillcore BRO5	Johnnys Creek Formation, Bitter Springs Group	820	MG006i	<0.5	813.60	100:0:0	100:0:0	0.0039	0	0	0
-Amadeus Basin	Northern Territory, Australia	Drillcore BRO5	Johnnys Creek Formation, Bitter Springs Group	820	111024i	NA	816.26	100:0:0	100:0:0	0.0051	0	0	0
-Amadeus Basin	Northern Territory, Australia	Drillcore BRO5	Johnnys Creek Formation, Bitter Springs Group	820	MG007i	NA	924.62	0:0:0	0:0:0	0.0	0	0	0
-Amadeus Basin	Northern Territory, Australia	Drillcore BRO5	Johnnys Creek Formation, Bitter Springs Group	820	111050i	NA	942.74	0:0:0	0:0:0	0.0	0	0	0
-Amadeus Basin	Northern Territory, Australia	Drillcore BRO5	Johnnys Creek Formation, Bitter Springs Group	820	131036i	NA	956.25	0:0:0	0:0:0	0.0	0	0	0
-Amadeus Basin	Northern Territory, Australia	Drillcore BRO5	Johnnys Creek Formation, Bitter Springs Group	820	131107i	NA	961.91	100:0:0	nm	0.0083	0	0	0
-Amadeus Basin	Northern Territory, Australia	Drillcore BRO5	Loves Creek Formation, Bitter Springs Group	820	131720i	NA	1090.55	0:0:0	nm	0.0	0	0	0
-Amadeus Basin	Northern Territory, Australia	Drillcore BRO5	Loves Creek Formation, Bitter Springs Group	820	13J7211	<0.5	1091.74	0:0:0	0:0:0	0.0	0	0	0
-Amadeus Basin	Northern Territory, Australia	Drillcore BRO5	Loves Creek Formation, Bitter Springs Group	820	111036i	NA	1106.62	0:0:0	0:0:0	0.0	0	0	0
-Amadeus Basin	Northern Territory, Australia	Drillcore BRO5	Loves Creek Formation, Bitter Springs Group	820	1110101	NA	1132.50	0:0:0	0:0:0	0.0	0	0	0
-Amadeus Basin	Northern Territory, Australia	Drillcore BRO5	Loves Creek Formation, Bitter Springs Group	820	111061i	NA	1184.55	0:0:0	nm	0.0	0	0	0
-Amadeus Basin	Northern Territory, Australia	Drillcore BRO5	Loves Creek Formation, Bitter Springs Group	820	111063i	<0.5	1224.69	0:0:0	0:0:0	0.0	0	0	0
-Officer Basin	Western Australia	Drillcore Empress 1A	Steptoe Formation, Buldya Group	721	14B214i	NA	509.14	0:0:0	100:0:0	0.0	0	0	0
-Officer Basin	Western Australia	Drillcore Empress 1A	Steptoe Formation, Buldya Group	721	14B213i	NA	588.21	100:0:0	100:0:0	0.42m)	0	0	0
-Officer Basin	Western Australia	Drillcore Empress 1A	Kanpa Formation, Buldya Group	725	1413212i	NA	629.60	100:0:0	100:0:0	0.055	0	0	1.2
-Officer Basin	Western Australia	Drillcore Empress 1A	Kanpa Formation, Buldya Group	725	146211i	NA	737.39	98.6:1.4:0	93:7:0	0.13	0	0	2.4
-Officer Basin	Western Australia	Drillcore Empress 1A	Kanpa Formation, Buldya Group	725	148210i	NA	757.00	99.1:0.9:0	100:0:0	0.20	0	0	1.1
-Officer Basin	Western Australia	Drillcore Empress 1A	Kanpa Formation, Buldya Group	725	148209i	NA	764.64	0:0:0	100:0:0	0.0	0	0	0
-Officer Basin	Western Australia	Drillcore Empress 1A	Kanpa Formation, Buldya Group	725	14B208ai	NA	768.25	0:0:0	100:0:0	0.0	0	0	0
-Officer Basin	Western Australia	Drillcore Empress 1A	Kanpa Formation, Buldya Group	725	149208W	NA	768.25	0:0:0	100:0:0	0.0	0	0	0
-Officer Basin	Western Australia	Drillcore Empress 1A	Kanpa Formation, Buldya Group	725	148207i	NA	823.66	0:0:0	nm	0.0	0	0	0
-Officer Basin	Western Australia	Drillcore Empress 1A	Kanpa Formation, Buldya Group	725	14B206i	NA	829.42	100:0:0	76:24:0	0.0085	0	0	7.8
-Officer Basin	Western Australia	Drillcore Empress 1A	Kanpa Formation, Buldya Group	725	149204i	NA	830.35	100:0:0	76:24:0	0.025	0	0	5.7
-Officer Basin	Western Australia	Drillcore Empress 1A	Kanpa Formation, Buldya Group	725	148203i	NA	839.23	100:0:0	86:14:0	0.012	0	0	15
-Officer Basin	Western Australia	Drillcore Empress 1A	Hussar Formation, Buldya Group	777	148202i	NA	1072.85	0:0:0	100:0:0	0.0	0	0	0
-Officer Basin	Western Australia	Drillcore Empress 1A	Hussar Formation, Buldya Group	777	148201-bi	NA	1074.15	0:0:0	87:13:0	0.0	0	0	0
-Officer Basin	Western Australia	Drillcore Empress 1A	Hussar Formation, Buldya Group	777	148201-ai	NA	1074.15	0:0:0	88:12:0	0.0	0	0	0
-Grand Canyon	Arizona	Outcrop at Sixtymile Canyon and Nankoweap Butte	Walcott Member, Kwagunt Formation, Chuar Group	751	101090	NA	1609	100:0:0	100:0:0	0.19	0	0	4.9
-Grand Canyon	Arizona	Outcrop at Sixtymile Canyon and Nankoweap Butte	Walcott Member, Kwagunt Formation, Chuar Group	751	101093	NA	1544	100:0:0	100:0:0	0.11	0	0	4.3
-Grand Canyon	Arizona	Outcrop at Sixtymile Canyon and Nankoweap Butte	Walcott Member, Kwagunt Formation, Chuar Group	751	101092	NA	1494	100:0:0	100:0:0	0.085	0	0	6.3
-Grand Canyon	Arizona	Outcrop at Sixtymile Canyon and Nankoweap Butte	Walcott Member, Kwagunt Formation, Chuar Group	751	101091	2.6	1480	100:0:0	100:0:0	0.15	0	0	nm
-Grand Canyon	Arizona	Outcrop at Sixtymile Canyon and Nankoweap Butte	Walcott Member, Kwagunt Formation, Chuar Group	751	101089	1.0	1365	100:0:0	100:0:0	0.18	0	0	4.9
-Grand Canyon	Arizona	Outcrop at Sixtymile Canyon and Nankoweap Butte	Walcott Member, Kwagunt Formation, Chuar Group	751	804026-i	1.7	1343	100:0:0	100:0:0	0.27	0	0	5.5
-Grand Canyon	Arizona	Outcrop at Sixtymile Canyon and Nankoweap Butte	Walcott Member, Kwagunt Formation, Chuar Group	751	B04029-i	NA	1340	100:0:0	100:0:0	0.31	0	0	6.4
-Grand Canyon	Arizona	Outcrop at Sixtymile Canyon and Nankoweap Butte	Awatubi Member, Kwagunt Formation, Chuar Group	745	101087	0.11	1286	100:0:0	nm	0.10	0	0	6.9
-Lake Vattern Basin	Sweden	Outcrop at Girabacken locality	Visingsa Group	800	VG-20-03-i	NA	0	100:00:00	100:00:00	0.12	0	0	3.7
-
+Amadeus Basin	Northern Territory, Australia	Drillcore BRO5	Aralka Formation	659	11J005i	0.31	242.2	100_0_0	NA	0.0055	0	0	0
+Amadeus Basin	Northern Territory, Australia	Drillcore BRO5	Aralka Formation	659	13J0901i	<0.50	468.56	100_0_0	NA	0.0009	0	0	0
+Amadeus Basin	Northern Territory, Australia	Drillcore BRO5	Aralka Formation	659	12J019i2	NA	471.5	100_0_0	NA	0.0029	0	0	0
+Amadeus Basin	Northern Territory, Australia	Drillcore BRO5	Aralka Formation	659	13J0902i 	<0.50	476.2	100_0_0	100_0_0	0.0096	0	0	0
+Amadeus Basin	Northern Territory, Australia	Drillcore BRO5	Aralka Formation	659	B03027i	8	477.5	0_0_0i)	100_0_0	0	0	0	0
+Amadeus Basin	Northern Territory, Australia	Drillcore BRO5	Aralka Formation	659	13J0903i	NA	480.45	100_0_0	100_0_0	0.012	0	0	0
+Amadeus Basin	Northern Territory, Australia	Drillcore BRO5	Aralka Formation	659	B06029i	0.09	481.85	0_0_0	100_0_0	0	0	0	0
+Amadeus Basin	Northern Territory, Australia	Drillcore BRO5	Watiara Formation, Finke Beds	750	11J021i	<0.5	573.06	100_0_0	73_27_0	0.0034	0	0	0
+Amadeus Basin	Northern Territory, Australia	Drillcore BRO5	Watiara Formation, Finke Beds	750	13J717i	NA	585.2	100_0_0	NA	0.003	0	0	0
+Amadeus Basin	Northern Territory, Australia	Drillcore BRO5	Johnnys Creek Formation, Bitter Springs Group	820	11J038i	<0.5	762.18	0_0_0	100_0_0	0	0	0	0
+Amadeus Basin	Northern Territory, Australia	Drillcore BRO5	Johnnys Creek Formation, Bitter Springs Group	820	13J718i	NA	808.2	100_0_0	NA	0.0065	0	0	0
+Amadeus Basin	Northern Territory, Australia	Drillcore BRO5	Johnnys Creek Formation, Bitter Springs Group	820	MG006i	<0.5	813.6	100_0_0	100_0_0	0.0039	0	0	0
+Amadeus Basin	Northern Territory, Australia	Drillcore BRO5	Johnnys Creek Formation, Bitter Springs Group	820	11J024i	NA	816.26	100_0_0	100_0_0	0.0051	0	0	0
+Amadeus Basin	Northern Territory, Australia	Drillcore BRO5	Johnnys Creek Formation, Bitter Springs Group	820	MG007i	NA	924.62	0_0_0	0_0_0	0	0	0	0
+Amadeus Basin	Northern Territory, Australia	Drillcore BRO5	Johnnys Creek Formation, Bitter Springs Group	820	11J050i	NA	942.74	0_0_0	0_0_0	0	0	0	0
+Amadeus Basin	Northern Territory, Australia	Drillcore BRO5	Johnnys Creek Formation, Bitter Springs Group	820	13J036i	NA	956.25	0_0_0	0_0_0	0	0	0	0
+Amadeus Basin	Northern Territory, Australia	Drillcore BRO5	Johnnys Creek Formation, Bitter Springs Group	820	13J107i	NA	961.91	100_0_0	NA	0.0083	0	0	0
+Amadeus Basin	Northern Territory, Australia	Drillcore BRO5	Loves Creek Formation, Bitter Springs Group	820	13J720i	NA	1090.55	0_0_0	NA	0	0	0	0
+Amadeus Basin	Northern Territory, Australia	Drillcore BRO5	Loves Creek Formation, Bitter Springs Group	820	13J721i  	<0.5	1091.74	0_0_0	0_0_0	0	0	0	0
+Amadeus Basin	Northern Territory, Australia	Drillcore BRO5	Loves Creek Formation, Bitter Springs Group	820	11J036i	NA	1106.62	0_0_0	0_0_0	0	0	0	0
+Amadeus Basin	Northern Territory, Australia	Drillcore BRO5	Loves Creek Formation, Bitter Springs Group	820	11J010i	NA	1132.5	0_0_0	0_0_0	0	0	0	0
+Amadeus Basin	Northern Territory, Australia	Drillcore BRO5	Loves Creek Formation, Bitter Springs Group	820	11J061i	NA	1184.55	0_0_0	NA	0	0	0	0
+Amadeus Basin	Northern Territory, Australia	Drillcore BRO5	Loves Creek Formation, Bitter Springs Group	820	11J063i	<0.5	1224.69	0_0_0	0_0_0	0	0	0	0
+Officer Basin	Western Australia	Drillcore Empress 1A	Steptoe Formation, Buldya Group	721	14B214i	NA	509.14	0_0_0	100_0_0	0	0	0	0
+Officer Basin	Western Australia	Drillcore Empress 1A	Steptoe Formation, Buldya Group	721	14B213i	NA	588.21	100_0_0	100_0_0	0.42	0	0	0
+Officer Basin	Western Australia	Drillcore Empress 1A	Kanpa Formation, Buldya Group	725	14B212i	NA	629.6	100_0_0	100_0_0	0.055	0	0	1.2
+Officer Basin	Western Australia	Drillcore Empress 1A	Kanpa Formation, Buldya Group	725	14B211i	NA	737.39	98.6_1.4_0	93_7_0	0.13	0	0	2.4
+Officer Basin	Western Australia	Drillcore Empress 1A	Kanpa Formation, Buldya Group	725	14B210i 	NA	757	99.1_0.9_0	100_0_0	0.2	0	0	1.1
+Officer Basin	Western Australia	Drillcore Empress 1A	Kanpa Formation, Buldya Group	725	14B209i	NA	764.64	0_0_0	100_0_0	0	0	0	0
+Officer Basin	Western Australia	Drillcore Empress 1A	Kanpa Formation, Buldya Group	725	14B208ai	NA	768.25	0_0_0	100_0_0	0	0	0	0
+Officer Basin	Western Australia	Drillcore Empress 1A	Kanpa Formation, Buldya Group	725	14B208bi	NA	768.25	0_0_0	100_0_0	0	0	0	0
+Officer Basin	Western Australia	Drillcore Empress 1A	Kanpa Formation, Buldya Group	725	14B207i	NA	823.66	0_0_0	NA	0	0	0	0
+Officer Basin	Western Australia	Drillcore Empress 1A	Kanpa Formation, Buldya Group	725	14B206i	NA	829.42	100_0_0	76_24_0	0.0085	0	0	7.8
+Officer Basin	Western Australia	Drillcore Empress 1A	Kanpa Formation, Buldya Group	725	14B204i	NA	830.35	100_0_0	76_24_0	0.025	0	0	5.7
+Officer Basin	Western Australia	Drillcore Empress 1A	Kanpa Formation, Buldya Group	725	14B203i	NA	839.23	100_0_0	86_14_0	0.012	0	0	15
+Officer Basin	Western Australia	Drillcore Empress 1A	Hussar Formation, Buldya Group	777	14B202i	NA	1072.85	0_0_0	100_0_0	0	0	0	0
+Officer Basin	Western Australia	Drillcore Empress 1A	Hussar Formation, Buldya Group	777	14B201-bi	NA	1074.15	0_0_0	87_13_0	0	0	0	0
+Officer Basin	Western Australia	Drillcore Empress 1A	Hussar Formation, Buldya Group	777	14B201-ai	NA	1074.15	0_0_0	88_12_0	0	0	0	0
+Grand Canyon	Arizona	Outcrop at Sixtymile Canyon and Nankoweap Butte	Walcott Member, Kwagunt Formation, Chuar Group	751	10J090	NA	1609	100_0_0	100_0_0	0.19	0	0	4.9
+Grand Canyon	Arizona	Outcrop at Sixtymile Canyon and Nankoweap Butte	Walcott Member, Kwagunt Formation, Chuar Group	751	10J093	NA	1544	100_0_0	100_0_0	0.11	0	0	4.3
+Grand Canyon	Arizona	Outcrop at Sixtymile Canyon and Nankoweap Butte	Walcott Member, Kwagunt Formation, Chuar Group	751	10J092	NA	1494	100_0_0	100_0_0	0.085	0	0	6.3
+Grand Canyon	Arizona	Outcrop at Sixtymile Canyon and Nankoweap Butte	Walcott Member, Kwagunt Formation, Chuar Group	751	10J091	2.6	1480	100_0_0	100_0_0	0.15	0	0	NA
+Grand Canyon	Arizona	Outcrop at Sixtymile Canyon and Nankoweap Butte	Walcott Member, Kwagunt Formation, Chuar Group	751	10J089	1	1365	100_0_0	100_0_0	0.18	0	0	4.9
+Grand Canyon	Arizona	Outcrop at Sixtymile Canyon and Nankoweap Butte	Walcott Member, Kwagunt Formation, Chuar Group	751	B04026 - i	1.7	1343	100_0_0	100_0_0	0.27	0	0	5.5
+Grand Canyon	Arizona	Outcrop at Sixtymile Canyon and Nankoweap Butte	Walcott Member, Kwagunt Formation, Chuar Group	751	B04029 - i	NA	1340	100_0_0	100_0_0	0.31	0	0	6.4
+Grand Canyon	Arizona	Outcrop at Sixtymile Canyon and Nankoweap Butte	Awatubi Member, Kwagunt Formation, Chuar Group	745	10J087	0.11	1286	100_0_0	NA	0.1	0	0	6.9
+Lake Vattern Basin	Sweden	Outcrop at Girabacken locality	Visingsa Group	800	VG-20-03-i	NA	0	100_0_0	100_0_0	0.12	0	0	3.7

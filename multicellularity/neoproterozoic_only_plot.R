@@ -31,7 +31,7 @@ period_ends = c(-720,-635,-541,-485,-443,-419,-358,-298,-252,-201,-145,-66,-23,0
 period_color = c("#c6c6c6", "#63a9c3", "#d6ab24", "#6da26e", "#28a46e", "#a5e3e5", "#d48f16", "#4fa092", "#d9491c", "#be58d0", "#4d94de", "#26bf3f", "#dba426", "#baab09")
 rect(period_starts[1:4],-0.38,period_ends[1:4],-0.1, border="#FFFFFF", col=period_color)
 text( (period_starts[1:4]+period_ends[1:4])/2, -0.225, period_letters[1:4])
-text( -516, -0.15, "-", cex=1.1) # add dash for Cambrian
+text( -516, -0.225, "-", cex=1.1) # add dash for Cambrian
 
 ### DRAW DIVERSITY CURVE
 

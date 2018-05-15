@@ -52,13 +52,16 @@ lines(c(-1000,-500),c(6.9,6.9),lwd=0.3)
 #lines(c(-1000,-500),c(8.2,8.2),lwd=0.3)
 
 axis(2, at=c(6.9,7.6,8.3), labels=c(0,10,20))
-lines(-cohendata[,1],cohendata[,2]/(20/1.4)+6.9, lwd=5, col="#dc6c02")
-#text(-1000,2,"Within-assemblage Diversity (Cohen and MacDonald 2015)", cex=1.2, pos=4)
+lines(-cohendata[,1],cohendata[,2]/(20/1.4)+6.9, lwd=1, col="#94681b88")
+text(-1005,7.7,"LOESS fitting", cex=1, pos=4, col="#94681b88")
 mtext("WAD", side=2, at=7.6, line=2.5, cex=1.4)
 #text(-1020,2.5,"C",pos=4,cex=1.5)
 mtext("B",side=2,las=1,cex=2, at=8.6,line=3.2)
 
+cohenpoints = read.table("~/git/oceanography_scripts/multicellularity/Cohen_Macdonald_2015_fig5b_points.txt", header=TRUE, sep="\t")
 
+low_wad = cohenpoints[,2] < 21
+points(-cohenpoints[,1][low_wad], cohenpoints[,2][low_wad]/(20/1.4)+6.9, pch=16, col="#e7790e88", cex=2)
 
 ### ADD CHROMIUM DATA
 

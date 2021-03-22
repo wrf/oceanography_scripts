@@ -1,6 +1,11 @@
 # oceanography_scripts
 oceanography code
 
+## secchi disk plot ##
+Plot of [Secchi disk](https://en.wikipedia.org/wiki/Secchi_disk) data from [NOAA National Centers for Environmental Information](https://www.ncei.noaa.gov/data/oceans/woa/WOD/DATA_SUBSETS/)
+
+![WOD13_secchi_forel.png](https://github.com/wrf/oceanography_scripts/blob/master/images/WOD13_secchi_forel.png)
+
 ## mbari CTD plot ##
 Plot of the CTD from [MBARI](https://www.mbari.org/products/data-repository/) ROVs
 

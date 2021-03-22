@@ -2,15 +2,9 @@
 
 args = commandArgs(trailingOnly=TRUE)
 inputfile = args[1]
-outfilename = gsub("([\\w/]+)\\....$","\\1.pdf",inputfile,perl=TRUE)
+#inputfile = "~/git/oceanography_scripts/data/mbari_dive_d420_ctd.txt"
 
-alldat = read.table(inputfile, header=TRUE, sep=',')
-
-pdf(file=outfilename, height = 8, width = 8)
-
-
-#ctddata = alldat[1:690,]
-ctddata = alldat
+ctddata = read.table(inputfile, header=TRUE, sep=',')
 
 depth = ctddata[,"depth"]
 temp = ctddata[,"temper"]
@@ -21,11 +15,14 @@ beamtrans = ctddata[,"light"]
 beamtrans[beamtrans=NA]=75
 
 templims = seq(0,20,2)
-yr = c(3600,0)
+yr = c(max(pretty(depth)),0)
 o2lims = seq(0,8,1)
 conv_o2lims=seq(0,300,20)
 saltlims = seq(24,38,1)
 beamlims = seq(0,100,10)
+
+outfilename = gsub("([\\w/]+)\\....$","\\1.pdf",inputfile,perl=TRUE)
+pdf(file=outfilename, height = 8, width = 8)
 
 par(mar=c(6,3.5,6,2))
 

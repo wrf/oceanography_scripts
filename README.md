@@ -21,6 +21,8 @@ wod_summary = summary(wod_data)
 wod_summary
 ```
 
+![WOD_OSD_samples_per_year.png](https://github.com/wrf/oceanography_scripts/blob/master/images/WOD_OSD_samples_per_year.png)
+
 Some basic filtering can be applied to simplify the dataset. To take only the first, or shallowest bottle, set `stop==0`. This would be looking at surface values of nearly all measurements.
 
 `filter(wod_data, stop == 0)`

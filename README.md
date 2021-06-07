@@ -4,7 +4,7 @@ oceanography code
 ## WOD OSD bottle data ##
 Data for OSD (Ocean Station Data) were downloaded from [NOAA WOD](https://www.ncei.noaa.gov/access/world-ocean-database-select/dbsearch.html), as of March 2021, containing data for 3069708 casts/stations for 28987253 total stops.
 
-This is in a completely useless .csv format that is NOT a table. Here, a python parser converts it into a giant table. The process took 16 minutes on my laptop and requires 22Gb RAM.
+This is in a completely useless .csv format that is NOT a table, broken down into 13 files (`ocldb1616358314.25649.OSD.csv.gz` up to `ocldb1616358314.25649.OSD13.csv.gz`. Here, a python parser converts it into a giant table. The process took 16 minutes on my laptop and requires 22Gb RAM.
 
 `compile_wod_csv_to_real_table.py -c *.csv.gz > ocldb1616358314.25649.OSD_all.all_vars.tab`
 
@@ -88,9 +88,12 @@ In general, the data are messy and need substantial post-processing. For example
 
 ![WOD_OSD_samples_by_temp.png](https://github.com/wrf/oceanography_scripts/blob/master/images/WOD_OSD_samples_by_temp.png)
 
-This code makes a map of global surface nitrate. The highest values appear due to river inputs. The southern ocean is also noticably darker than much of the rest of the world.
+This code makes a map of global surface nitrate. The highest values appear to be due to river inputs. The southern ocean is also noticeably darker than much of the rest of the world, as a well known [HNCL region](https://en.wikipedia.org/wiki/High-nutrient,_low-chlorophyll_regions).
 
 ```
+library(ggplot2)
+library(dplyr)
+worldpolygons = map_data("world")
 first_stop_w_nitrate = filter(wod_data, stop==0, !is.na(Nitrate))
 wnit_gg = ggplot(worldpolygons) +
     coord_cartesian(expand = c(0,0)) +

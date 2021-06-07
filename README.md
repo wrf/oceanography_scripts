@@ -8,11 +8,39 @@ This is in a completely useless .csv format that is NOT a table. Here, a python 
 
 `compile_wod_csv_to_real_table.py -c *.csv.gz > ocldb1616358314.25649.OSD_all.all_vars.tab`
 
-The table headers are listed. Most are self explanatory. `stop` refers to which bottle in a single cast, with 0 being the first. Note that the variable names mostly keep format of the OSD data, including the 10 character limit (e.g. `Temperatur`).
+The table headers are listed below, and most are self explanatory. `stop` refers to the bottle order in a single cast, with 0 being the first. Note that the variable names mostly keep format of the OSD data, including the 10 character limit (e.g. `Temperatur`).
 
 `cast_id	cruise_id	orig_station_id	orig_cruise_id	latitude	longitude	year	month	day	country	country_acc_number	stop	depth	CFC11	DeltaC13	DeltaC14	Nitrate	pH	CFC12	Chlorophyl	Alkalinity	Pressure	Argon	Temperatur	CFC113	tCO2	Silicate	Oxygen	Salinity	Oxy18	Tritium	Neon	DeltaHe3	Phosphate	pCO2	Helium	Ammonia`
 
-Loading the data into R then requires 14Gb RAM.
+Units should be:
+
+```
+Depth         m
+Pressure      dbar
+Temperatur    degrees C
+Salinity      PSS
+Oxygen        umol/kg
+Phosphate     umol/kg
+Nitrate       umol/kg
+Silicate      umol/kg
+Ammonia       umol/l
+Chlorophyl    ug/l
+tCO2          mM
+DeltaC14      per mille
+DeltaC13      per mille
+Oxy18         per mille
+Alkalinity    meq/l
+CFC11         pmol/kg
+CFC12         pmol/kg
+CFC113        pmol/kg
+Helium        nmol/kg
+DeltaHe3      percent
+Tritium       TU
+Neon          nmol/kg
+Argon         nmol/kg
+```
+
+Loading the entire table into R then requires 14Gb RAM.
 
 ```
 wod_data_file = "~/project/WOD_select/ocldb1616358314.25649.OSD_all.all_vars.tab"
@@ -23,11 +51,17 @@ wod_summary
 
 ![WOD_OSD_samples_per_year.png](https://github.com/wrf/oceanography_scripts/blob/master/images/WOD_OSD_samples_per_year.png)
 
-Some basic filtering can be applied to simplify the dataset. To take only the first, or shallowest bottle, set `stop==0`. This would be looking at surface values of nearly all measurements.
+![WOD_OSD_max_depth_by_year.png](https://github.com/wrf/oceanography_scripts/blob/master/images/WOD_OSD_max_depth_by_year.png)
 
-`filter(wod_data, stop == 0)`
+Some basic filtering can be applied to simplify the dataset. To take only the first, or shallowest bottle, set `stop==0`. This would be looking at surface values of nearly all measurements, of a total of 3069708 observations.
 
-In general, the data are messy and need substantial post-processing. For example, most casts have temperature. However, this column contains a few negative values (below -2, which would be the temperature of brine-excluded polar water), and values between 50 and 100, which are likely Fahrenheit, instead of hydrothermal vents.
+`first_stop_only = filter(wod_data, stop == 0)`
+
+Taking all shallow water measurements is a larger set, since there are many 10m or 20m samples, this leaves 12134025 samples.
+
+`surface_data_only = filter(wod_data, abs(depth) < 50)`
+
+In general, the data are messy and need substantial post-processing. For example, most casts have temperature. However, this column contains a few negative values (below -2, which would be the temperature of [brine-excluded polar water](https://nsidc.org/cryosphere/seaice/index.html)), and values between 50 and 100, which are likely Fahrenheit, instead of [hydrothermal vents](https://oceanservice.noaa.gov/facts/vents.html).
 
 ```
 > table( round(wod_data[["Temperatur"]]) )
@@ -52,8 +86,28 @@ In general, the data are messy and need substantial post-processing. For example
       1       1       1       1       1       1 
 ```
 
+![WOD_OSD_samples_by_temp.png](https://github.com/wrf/oceanography_scripts/blob/master/images/WOD_OSD_samples_by_temp.png)
+
+This code makes a map of global surface nitrate. The highest values appear due to river inputs. The southern ocean is also noticably darker than much of the rest of the world.
+
+```
+first_stop_w_nitrate = filter(wod_data, stop==0, !is.na(Nitrate))
+wnit_gg = ggplot(worldpolygons) +
+    coord_cartesian(expand = c(0,0)) +
+    labs(x=NULL, y=NULL) +
+    theme(axis.text = element_blank(),
+          axis.ticks = element_blank(),
+          legend.position=c(0.75,0.75)  ) +
+    geom_polygon( aes(x=long, y = lat, group = group), fill="#aaaaaa", colour="#ffffff") +
+    scale_colour_gradient(low = "#e7e1ef", high = "#8e1236", trans="log10", na.value="#f7f4f9" ) +
+    geom_point(data=first_stop_w_nitrate, aes( x=longitude, y=latitude, colour=Nitrate), size=0.5 )
+ggsave(file="~/git/oceanography_scripts/images/WOD_OSD_surface_nitrate.png", wnit_gg, device="png", width=12, height=6, dpi=90)
+```
+
+![WOD_OSD_surface_nitrate.png](https://github.com/wrf/oceanography_scripts/blob/master/images/WOD_OSD_surface_nitrate.png)
+
 ## secchi disk plot ##
-Plot of [Secchi disk](https://en.wikipedia.org/wiki/Secchi_disk) data from [NOAA National Centers for Environmental Information](https://www.ncei.noaa.gov/data/oceans/woa/WOD/DATA_SUBSETS/). This was in the format of a .csv file, and required little post-processing.
+Plot of [Secchi disk](https://en.wikipedia.org/wiki/Secchi_disk) data from [NOAA National Centers for Environmental Information](https://www.ncei.noaa.gov/data/oceans/woa/WOD/DATA_SUBSETS/). This was in the format of a .csv file containing 463875 casts, and required little post-processing.
 
 ![WOD13_secchi_forel.png](https://github.com/wrf/oceanography_scripts/blob/master/images/WOD13_secchi_forel.png)
 
@@ -65,12 +119,12 @@ Plot of the CTD from [MBARI](https://www.mbari.org/products/data-repository/) RO
 ![mbari_dive_d420_ctd.png](https://github.com/wrf/oceanography_scripts/blob/master/images/mbari_dive_d420_ctd.png)
 
 ## phanerozoic oxygen ##
-Plot of Phanerozoic oxygen level, based on various models ( [Bergman 2004 COPSE](https://doi.org/10.2475/ajs.304.5.397) and [Berner 2006 GEOCARBSULF](https://doi.org/10.1016/j.gca.2005.11.032) )
+Plot of Phanerozoic oxygen level, based on various models ( [Bergman 2004 COPSE](https://doi.org/10.2475/ajs.304.5.397) and [Berner 2006 GEOCARBSULF](https://doi.org/10.1016/j.gca.2005.11.032) ). These data were hacked out of the paper, though an updated version of the model code is [here](https://github.com/sjdaines/COPSE) by [Lenton 2018](https://doi.org/10.1016/j.earscirev.2017.12.004).
 
 ![o2_models_phanerozoic_v1.png](https://github.com/wrf/oceanography_scripts/blob/master/images/o2_models_phanerozoic_v1.png)
 
 ## ts_diagram_example ##
-Plot of Temperature-Salinity diagram from WOCE Station P17N in the North Pacific on 1-June-1993
+Plot of Temperature-Salinity diagram from [WOCE](https://en.wikipedia.org/wiki/World_Ocean_Circulation_Experiment) Station P17N in the North Pacific on 1-June-1993
 
 `Rscript ts_diagram_example.R`
 

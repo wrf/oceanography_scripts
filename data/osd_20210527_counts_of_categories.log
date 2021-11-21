@@ -1,0 +1,106 @@
+#DEBUG: keep F and O flags for variables: False
+#DEBUG: track counts of CSV row/column headers: False
+#DEBUG: track counts of each variable: True
+# Parsing csv from ocldb1616358314.25649.OSD10.csv.gz as gzipped  Thu May 27 13:48:06 2021
+# Counted 241854 entries over 9737600 lines from ocldb1616358314.25649.OSD10.csv.gz  Thu May 27 13:48:33 2021
+# Parsing csv from ocldb1616358314.25649.OSD11.csv.gz as gzipped  Thu May 27 13:48:33 2021
+# Counted 244868 entries over 9578480 lines from ocldb1616358314.25649.OSD11.csv.gz  Thu May 27 13:49:01 2021
+# Parsing csv from ocldb1616358314.25649.OSD12.csv.gz as gzipped  Thu May 27 13:49:01 2021
+# Counted 262271 entries over 9665662 lines from ocldb1616358314.25649.OSD12.csv.gz  Thu May 27 13:49:31 2021
+# Parsing csv from ocldb1616358314.25649.OSD13.csv.gz as gzipped  Thu May 27 13:49:31 2021
+# Counted 7252 entries over 256546 lines from ocldb1616358314.25649.OSD13.csv.gz  Thu May 27 13:49:33 2021
+# Parsing csv from ocldb1616358314.25649.OSD2.csv.gz as gzipped  Thu May 27 13:49:33 2021
+# Counted 309796 entries over 9819532 lines from ocldb1616358314.25649.OSD2.csv.gz  Thu May 27 13:49:55 2021
+# Parsing csv from ocldb1616358314.25649.OSD3.csv.gz as gzipped  Thu May 27 13:49:55 2021
+# Counted 283866 entries over 9787457 lines from ocldb1616358314.25649.OSD3.csv.gz  Thu May 27 13:50:20 2021
+# Parsing csv from ocldb1616358314.25649.OSD4.csv.gz as gzipped  Thu May 27 13:50:20 2021
+# Counted 263689 entries over 9670873 lines from ocldb1616358314.25649.OSD4.csv.gz  Thu May 27 13:50:45 2021
+# Parsing csv from ocldb1616358314.25649.OSD5.csv.gz as gzipped  Thu May 27 13:50:45 2021
+# Counted 259225 entries over 9786644 lines from ocldb1616358314.25649.OSD5.csv.gz  Thu May 27 13:51:10 2021
+# Parsing csv from ocldb1616358314.25649.OSD6.csv.gz as gzipped  Thu May 27 13:51:10 2021
+# Counted 261905 entries over 9796879 lines from ocldb1616358314.25649.OSD6.csv.gz  Thu May 27 13:51:36 2021
+# Parsing csv from ocldb1616358314.25649.OSD7.csv.gz as gzipped  Thu May 27 13:51:36 2021
+# Counted 251269 entries over 9593773 lines from ocldb1616358314.25649.OSD7.csv.gz  Thu May 27 13:52:03 2021
+# Parsing csv from ocldb1616358314.25649.OSD8.csv.gz as gzipped  Thu May 27 13:52:03 2021
+# Counted 252249 entries over 9696917 lines from ocldb1616358314.25649.OSD8.csv.gz  Thu May 27 13:52:29 2021
+# Parsing csv from ocldb1616358314.25649.OSD9.csv.gz as gzipped  Thu May 27 13:52:29 2021
+# Counted 243065 entries over 9745428 lines from ocldb1616358314.25649.OSD9.csv.gz  Thu May 27 13:52:57 2021
+# Parsing csv from ocldb1616358314.25649.OSD.csv.gz as gzipped  Thu May 27 13:52:57 2021
+# Counted 350907 entries over 9948526 lines from ocldb1616358314.25649.OSD.csv.gz  Thu May 27 13:53:17 2021
+#VAR:Depth_O	3069708
+#VAR:Depth_F	3069708
+#VAR:Depth	3069708
+#VAR:Temperatur	2947412
+#VAR:Temperatur_F	2947412
+#VAR:Temperatur_O	2947412
+#VAR:Salinity_F	2470044
+#VAR:Salinity_O	2470044
+#VAR:Salinity	2470044
+#VAR:Oxygen	962205
+#VAR:Oxygen_F	962205
+#VAR:Oxygen_O	962205
+#VAR:Phosphate	632396
+#VAR:Phosphate_O	632396
+#VAR:Phosphate_F	632396
+#VAR:Silicate_O	492263
+#VAR:Silicate_F	492263
+#VAR:Silicate	492263
+#VAR:Nitrate_O	424761
+#VAR:Nitrate_F	424761
+#VAR:Nitrate	424761
+#VAR:pH	280562
+#VAR:pH_F	280562
+#VAR:pH_O	280562
+#VAR:Chlorophyl_F	255100
+#VAR:Chlorophyl	255100
+#VAR:Chlorophyl_O	255100
+#VAR:Pressure	213359
+#VAR:Pressure_F	213359
+#VAR:Pressure_O	213359
+#VAR:Ammonia_F	192153
+#VAR:Ammonia	192153
+#VAR:Ammonia_O	192153
+#VAR:Alkalinity	83479
+#VAR:Alkalinity_F	83479
+#VAR:Alkalinity_O	83479
+#VAR:tCO2_O	25628
+#VAR:tCO2_F	25628
+#VAR:tCO2	25628
+#VAR:CFC12_F	20881
+#VAR:CFC12_O	20881
+#VAR:CFC12	20881
+#VAR:CFC11	20697
+#VAR:CFC11_O	20697
+#VAR:CFC11_F	20697
+#VAR:CFC113	7651
+#VAR:CFC113_O	7651
+#VAR:CFC113_F	7651
+#VAR:pCO2_O	3496
+#VAR:pCO2_F	3496
+#VAR:pCO2	3496
+#VAR:DeltaHe3_O	3120
+#VAR:DeltaHe3_F	3120
+#VAR:DeltaHe3	3120
+#VAR:Helium_O	3036
+#VAR:Helium_F	3036
+#VAR:Helium	3036
+#VAR:Tritium	2547
+#VAR:Tritium_F	2547
+#VAR:Tritium_O	2547
+#VAR:DeltaC14_O	2363
+#VAR:DeltaC14_F	2363
+#VAR:DeltaC14	2363
+#VAR:DeltaC13	2269
+#VAR:DeltaC13_F	2269
+#VAR:DeltaC13_O	2269
+#VAR:Neon_F	2027
+#VAR:Neon_O	2027
+#VAR:Neon	2027
+#VAR:Oxy18_O	1461
+#VAR:Oxy18_F	1461
+#VAR:Oxy18	1461
+#VAR:Argon	78
+#VAR:Argon_O	78
+#VAR:Argon_F	78
+# Counted 3069708 entries total from 13 files  Thu May 27 13:53:17 2021
+

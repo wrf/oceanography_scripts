@@ -49,7 +49,9 @@ par(mfrow=c(7,1), mar=c(2.5,4.5,1,1))
 for (i in (6:57)[has_enough_counts] ){
   plot(exp_time, vm_data$depth, xlim=c(900,3360), ylim=c(55,-4), frame.plot=FALSE, axes=FALSE,
        main="", xlab="", ylab="Depth (m)",
-       pch=ifelse(vm_data[,i]>0,16,1), col=daytime_cols[clock_hour+1], cex=log10( vm_data[,i]+0.1)+2 ) 
+       pch=ifelse(vm_data[,i]>0,16,1), 
+       col=ifelse(vm_data[,i]>0,daytime_cols[clock_hour+1],"#00000033"), 
+       cex=log10( vm_data[,i]+0.1)+2 ) 
   text(2100, 50, gsub("_"," ",species[i-5]), cex=1.2, font=3)
   axis(2)
   axis(1, at=seq(840,3300,240), labels = c("14:00", "18:00", "22:00", "02:00", "06:00", "10:00", "14:00", "18:00", "22:00", "02:00", "06:00") )

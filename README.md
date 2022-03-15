@@ -1,6 +1,11 @@
 # oceanography_scripts
 oceanography code
 
+## replot of Russell 1928 vertical migration of plankton ##
+Data from Russell (1928) [The Vertical Distribution of Marine Macroplankton. VI. Further Observations on Diurnal Changes](https://doi.org/10.1017/S0025315400055545), presumably in the English channel not far from Plymouth. Original figures had violin plots, but the X-axis was not uniform. Some errors appear to be in the original data from miscounting for the totals in the table.
+
+![russell1928_vertical_migration_data.example.png](https://github.com/wrf/oceanography_scripts/blob/master/images/russell1928_vertical_migration_data.example.png)
+
 ## WOD OSD bottle data ##
 Data for OSD (Ocean Station Data) were downloaded from [NOAA WOD](https://www.ncei.noaa.gov/access/world-ocean-database-select/dbsearch.html), as of March 2021, containing data for 3069708 casts/stations for 28987253 total stops.
 

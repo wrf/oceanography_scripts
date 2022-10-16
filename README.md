@@ -13,6 +13,8 @@ This is in a completely useless .csv format that is NOT a table, broken down int
 
 `compile_wod_csv_to_real_table.py -c *.csv.gz > ocldb1616358314.25649.OSD_all.all_vars.tab`
 
+As of 2022, the dataset is [downloadable here](https://bitbucket.org/wrf/datasets/downloads/).
+
 The table headers are listed below, and most are self explanatory. `stop` refers to the bottle order in a single cast, with 0 being the first. Note that the variable names mostly keep format of the OSD data, including the 10 character limit (e.g. `Temperatur`).
 
 `cast_id	cruise_id	orig_station_id	orig_cruise_id	latitude	longitude	year	month	day	country	country_acc_number	stop	depth	CFC11	DeltaC13	DeltaC14	Nitrate	pH	CFC12	Chlorophyl	Alkalinity	Pressure	Argon	Temperatur	CFC113	tCO2	Silicate	Oxygen	Salinity	Oxy18	Tritium	Neon	DeltaHe3	Phosphate	pCO2	Helium	Ammonia`
@@ -113,6 +115,16 @@ ggsave(file="~/git/oceanography_scripts/images/WOD_OSD_surface_nitrate.png", wni
 ```
 
 ![WOD_OSD_surface_nitrate.png](https://github.com/wrf/oceanography_scripts/blob/master/images/WOD_OSD_surface_nitrate.png)
+
+## tang 2019 replots ##
+Using the [matlab datasets](https://doi.pangaea.de/10.1594/PANGAEA.905108) from [Tang 2019](https://doi.org/10.1029/2019GL084376), on distribution of diazotrophs in the oceans.
+
+![Diazotrophs_RF_global_monthly.01.png](https://github.com/wrf/oceanography_scripts/blob/master/images/Diazotrophs_RF_global_monthly.01.png)
+
+## wang 2019 replots ##
+Replots of some of the data from [Wang 2019](http://dx.doi.org/10.1038/s41586-019-0911-2). I do not remember the data being available online with the paper, but were sent from the lead author. They can be [downloaded here](https://bitbucket.org/wrf/datasets/downloads/wang_2019_matlab_data.zip).
+
+![preindustrial.map_integrated_N_fix.png](https://github.com/wrf/oceanography_scripts/blob/master/images/preindustrial.map_integrated_N_fix.png)
 
 ## secchi disk plot ##
 Plot of [Secchi disk](https://en.wikipedia.org/wiki/Secchi_disk) data from [NOAA National Centers for Environmental Information](https://www.ncei.noaa.gov/data/oceans/woa/WOD/DATA_SUBSETS/). This was in the format of a .csv file containing 463875 casts, and required little post-processing.

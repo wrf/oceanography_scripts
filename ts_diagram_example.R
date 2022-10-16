@@ -9,20 +9,20 @@ temp = wocedata[,2]
 salinity = wocedata[,4]
 
 roundedtemp = round(temp)
-depthtocol = rev(colorRampPalette(c("#FF8800","#0000BB"),alpha=0.9)(15))
+depthtocol = rev(colorRampPalette(c("#FF880099","#0000BB99"),alpha=0.6)(15))
 
 roundedsalt = round(salinity,digits=1)
 salttocol = rev(colorRampPalette(c("#FF0000","#00FF00"),alpha=0.9)(16))
 salttoindex = 10*(roundedsalt-33.2)+1
 
 
-pdf(file="~/git/oceanography_scripts/images/woce_p17n_t-s_diagram_v1.pdf",width=6,height=6)
+pdf(file="~/git/oceanography_scripts/images/woce_p17n_t-s_diagram_v2.pdf",width=5,height=5)
 
 #png(file="~/git/oceanography_scripts/images/woce_p17n_t-s_diagram_v1.png",width=500,height=500)
 
 par(mar=c(4.5,4.5,1,1))
-plot(salinity,temp, type='l', xlim=c(33.0,35.0), ylim=c(0,16), xlab="Salinity", ylab="Temp (C)", cex.lab=1.5, cex.axis=1.2, lwd=2)
-points(salinity, temp, pch=22, bg=depthtocol[roundedtemp])
+plot(salinity,temp, type='l', xlim=c(33.0,35.0), ylim=c(0,16), xlab="Salinity", ylab="Temp (C)", cex.lab=1.7, cex.axis=1.5, lwd=2.5, col="#242424" )
+points(salinity, temp, pch=21, bg=depthtocol[roundedtemp], cex=2)
 text(34.3,16,"WOCE Station P17N", cex=1.5)
 text(34.3,15,"37.5 N 135.0 W", cex=1.5)
 text(34.3,14,"1-June-1993", cex=1.5)

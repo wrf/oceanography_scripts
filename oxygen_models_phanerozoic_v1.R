@@ -11,7 +11,7 @@ geocarbsulf_lower = read.table("~/git/oceanography_scripts/data/berner_2006_GEOC
 
 modernO2 = 20
 
-pdf("~/git/oceanography_scripts/images/o2_models_phanerozoic_v1.pdf", width=8, height=7)
+pdf("~/git/oceanography_scripts/images/o2_models_phanerozoic_v2.pdf", width=8, height=7)
 par(mar=c(4.5,4.5,2,1))
 plot(0,0,type='n',xlim=c(-600,0),ylim=c(0,40),axes=FALSE,frame.plot=FALSE, xlab="Time (Ma)", ylab="% atmospheric oxygen", cex.lab=1.3, main="Phanerozoic Oxygen Record")
 axis(1,at=seq(-600,0,50),labels=rev(seq(0,600,50)),cex.axis=1.4)
@@ -36,11 +36,13 @@ polygon(c(-1*geocarbsulf_upper[,1],rev(-1*geocarbsulf_lower[,1])), c(geocarbsulf
 lines(-1*copse_baseline[,1],copse_baseline[,2]*modernO2, lwd=5, col="#225ea8cc")
 lines(-1*copse_run9[,1],copse_run9[,2]*modernO2, lwd=5, col="#41b6c4cc")
 
+polygon(c(-1*copse_baseline[,1],rev(-1*copse_run9[,1])), c(copse_baseline[,2],rev(copse_run9[,2]))*modernO2, col="#41b6c433", border=FALSE)
+
 #"COPSE Standard", 
 #"#31a354", 
 
-legenditems = c("COPSE Baseline", "COPSE Run 9", "GEOCARBSULF")
-legendcols = c("#225ea8", "#41b6c4", "#ec7014")
+legenditems = c("COPSE model", "GEOCARBSULF")
+legendcols = c("#41b6c4", "#ec7014")
 legend(-600,40, legend=legenditems, lwd=4, col=legendcols, cex=1.3)
 
 dev.off()

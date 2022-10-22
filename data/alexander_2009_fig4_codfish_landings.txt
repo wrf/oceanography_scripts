@@ -1,0 +1,3 @@
+year	landings_t_min	landings_t_max	source
+1861	62815	78777	alexander2009
+1870	53547	67063	alexander2009

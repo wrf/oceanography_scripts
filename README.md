@@ -1,8 +1,13 @@
 # oceanography_scripts
 oceanography code
 
+## replot of historical codfish landings ##
+Historical estimates of [codfish](https://en.wikipedia.org/wiki/Atlantic_cod) landings from [Alexander 2009](https://doi.org/10.1111/j.1467-2979.2009.00334.x), making use of modern data and values of [MSY/SSB](https://repository.library.noaa.gov/view/noaa/12856) from [NOAA/NMSF](https://apps-nefsc.fisheries.noaa.gov/rcb/publications/center-reference-documents.html) by [Mayo 2008](https://repository.library.noaa.gov/view/noaa/3632). Their data suggest that there truly were significantly more fish in the sea during the 19th century, rapidly decreasing during the industrial age.
+
+![historical_codfish_landings_from_alexander2009.png](https://github.com/wrf/oceanography_scripts/blob/master/images/historical_codfish_landings_from_alexander2009.png)
+
 ## replot of Russell 1928 vertical migration of plankton ##
-Data from Russell (1928) [The Vertical Distribution of Marine Macroplankton. VI. Further Observations on Diurnal Changes](https://doi.org/10.1017/S0025315400055545), presumably in the English channel not far from Plymouth. Original figures had violin plots, but the X-axis was not uniform. Some errors appear to be in the original data from miscounting for the totals in the table.
+Data from Russell (1928) [The Vertical Distribution of Marine Macroplankton. VI. Further Observations on Diurnal Changes](https://doi.org/10.1017/S0025315400055545), presumably in the English channel not far from Plymouth. Original figures had violin plots, but the X-axis was not uniform. Some errors appear to be in the original data from miscounting for the totals in the table. Six examples are shown, but all are plotted in the [extended pdf version](https://github.com/wrf/oceanography_scripts/blob/master/images/russell1928_vertical_migration_data.6pages.pdf).
 
 ![russell1928_vertical_migration_data.example.png](https://github.com/wrf/oceanography_scripts/blob/master/images/russell1928_vertical_migration_data.example.png)
 

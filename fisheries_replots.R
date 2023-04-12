@@ -28,8 +28,8 @@ gp = ggplot(data=nmsf_data , aes(x=year, y=total) ) +
        caption = "Data from: Alexander et al (2009) Gulf of Maine cod in 1861: Historical analysis of fishery logbooks, with ecosystem implications. Fish and Fisheries\nMSY: Maximum Sustainable Yield; SSB: Spawning Stock Biomass") +
   scale_x_continuous(limits = c(1848,2010), expand = c(0,0)) +
   scale_y_continuous(limits = c(0,85000), expand = c(0,0) ) +
-  geom_hline(yintercept = 16600, color="#991d00", size=3, alpha=0.8) + 
-  geom_hline(yintercept = 82830, color="#170c25", size=3, alpha=0.8) +
+  geom_hline(yintercept = 16600, color="#991d00", size=2, alpha=0.8, linetype="dashed") + 
+  geom_hline(yintercept = 82830, color="#170c25", size=2, alpha=0.8, linetype="dashed") +
   annotate(geom="text", x=1860, y=22000, label="MSY", color="#991d00", size=6) +
   annotate(geom="text", x=2000, y=78000, label="SSB", color="#170c25", size=6) +
   geom_point( color="#004dac", size=6, alpha=0.8) +

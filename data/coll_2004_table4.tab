@@ -1,0 +1,23 @@
+# J. Coll et al (2004) Spear fishing in the Balearic Islands (west central Mediterranean): species affected and catch evolution during the period 1975-2001. Fisheries Research 70: 97-111.
+#Table 4
+#Mean, maximum and minimum weights (kg) of E. marginatus and mean number of fishes of this species in the catch of larger fishes collected by the first 10 classified by year
+Year	Mean_weight	Minimum_weight	Maximum_weight	Mw_SD	n	Mean_no_individuals	Mno_SD	N_competitions
+1975	9.3	0.8	27.5	5.87	32	6.4	3.44	5
+1977	6.73	1	20.15	5.5	27	3.86	2.48	7
+1980	7.18	1.19	22.6	6.63	30	6	3.32	5
+1985	7.13	1.37	23	7.13	23	4.6	2.07	5
+1986	5.71	1.12	14.5	4.75	16	4	2.94	4
+1987	4.37	1.13	17.35	3.93	27	5.4	2.41	5
+1988	9.28	2.29	21.5	7.19	10	2	2	5
+1989	3.07	2.36	4.69	1	5	1.25	0.5	4
+1990	6.09	2.21	12.12	5.29	3	1.5	0.71	2
+1991	10.25	2.31	20.75	8.57	6	2	2	3
+1992	3.51	2.28	5.5	1.01	8	1.6	1.14	5
+1993	6.25	2.01	20.75	7.13	11	1.38	1.41	8
+1994	7.31	2.08	20.15	6.96	10	1.43	1.27	7
+1995	2.99	2.32	3.67	0.95	2	0.4	0.55	5
+1996	3.39	2.01	8.5	2.3	7	1.75	2.36	4
+1997	7.92	2.04	22.5	7.44	12	1.5	1.2	8
+1998	5.35	2.35	19	5.33	9	1.8	1.48	5
+1999	5.27	2.32	16.3	6.17	5	1.67	0.58	3
+2000	2.62	2.15	3.66	0.5	11	2.2	1.1	5

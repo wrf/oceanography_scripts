@@ -1,0 +1,43 @@
+# J. Coll et al (2004) Spear fishing in the Balearic Islands (west central Mediterranean): species affected and catch evolution during the period 1975-2001. Fisheries Research 70: 97-111.
+#Table 1
+#Percentage species abundance (%N) captured in spear fishing competitions carried out in the Balearic Islands from 1994 to 2000
+Species	note	habitat	Majorca_pct	Majorca_raw	Minorca_pct	Minorca_raw	Ibiza_Formentera_pct	Ibiza_Formentera_raw
+#Coastal pelagic species
+Oblada melanura	a	pelagic	0.16	14	0.1	2	0.29	2
+Lichia amia	a	pelagic	0.21	18	0.21	4	0	0
+Seriola dumerili	a	pelagic	0.84	73	4.43	85	1.3	9
+Sphyraena sp	a	pelagic	0.28	24	0.42	8	0	0
+Coryphaena hippurus	0	pelagic	0	0	0.26	5	0	0
+#Medium-large home-range demersal species
+Balistes carolinensis	a	long range demersal	1.8	156	0.36	7	0.14	1
+Dactylopterus volitans	a	long range demersal	5.4	468	0.42	8	1.01	7
+Dentex dentex	a	long range demersal	0.5	43	0.16	3	0	0
+Dicentrarchus labrax	a	long range demersal	1.02	88	0.89	17	0.43	3
+Lithognatus mormyrus	a	long range demersal	0.22	19	0	0	0.43	3
+Lophius piscatorius	0	long range demersal	0.01	1	0	0	0	0
+Mugilidae	a	long range demersal	10.61	919	12.77	245	12.41	86
+Mulletus surmuletus	0	long range demersal	0.07	6	0.1	2	0	0
+Pagellus erythrinus	0	long range demersal	0.05	4	0	0	0.14	1
+Sparus aurata	a	long range demersal	1.1	95	0.94	18	0.14	1
+Spondyliosoma cantharus	a	long range demersal	0.12	10	0.05	1	0.58	4
+Trigloporus lastoviza	0	long range demersal	0	0	0.1	2	0	0
+Zeus faber	0	long range demersal	0.02	2	0	0	0	0
+#Low-medium home-range demersal species
+Diplodus puntazzo	a	medium range demersal	0.01	1	0	0	0	0
+Diplodus cervinus	0	medium range demersal	0.83	72	0.52	10	0.72	5
+Diplodus sargus	a	medium range demersal	40.04	3468	37.96	728	33.04	229
+Diplodus vulgaris	0	medium range demersal	0.08	7	0.21	4	0	0
+Epinephelus marginatus	a	medium range demersal	1.14	99	1.72	33	1.73	12
+Epinephelus spp.	a	medium range demersal	0.31	27	0	0	0.72	5
+Labrus viridis	a	medium range demersal	5.7	494	4.48	86	4.76	33
+Symphodus tinca – Labrus merula	a	medium range demersal	11.3	979	13.35	256	9.96	69
+Sarpa salpa	a	medium range demersal	4.69	406	8.55	164	7.79	54
+Umbrina cirrosa	a	medium range demersal	0.08	7	0.36	7	0	0
+#Low home-range benthic species
+Conger conger	0	short range benthic	0.51	44	0.47	9	0.72	5
+Muraena helena	a	short range benthic	1.97	171	1.56	30	2.31	16
+Phycis phycis	a	short range benthic	2.22	192	0.78	15	3.32	23
+Scorpaena porcus	0	short range benthic	0.13	11	0	0	0.14	1
+Scorpaena scrofa	a	short range benthic	3.82	331	3.39	65	6.06	42
+Sciaena umbra	a	short range benthic	4.75	411	5.42	104	11.83	82
+Uranoscopus scaber	0	short range benthic	0.01	1	0	0	0	0

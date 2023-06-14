@@ -6,6 +6,9 @@ Historical estimates of [codfish](https://en.wikipedia.org/wiki/Atlantic_cod) la
 
 ![historical_codfish_landings_from_alexander2009.png](https://github.com/wrf/oceanography_scripts/blob/master/images/historical_codfish_landings_from_alexander2009.png)
 
+![plot of mean fish weight by year](https://github.com/wrf/oceanography_scripts/blob/master/images/spearfish_catch_tab2_from_coll2004.png)
+
+
 ## replot of Russell 1928 vertical migration of plankton ##
 Data from Russell (1928) [The Vertical Distribution of Marine Macroplankton. VI. Further Observations on Diurnal Changes](https://doi.org/10.1017/S0025315400055545), presumably in the English channel not far from Plymouth. Original figures had violin plots, but the X-axis was not uniform. Some errors appear to be in the original data from miscounting for the totals in the table. Six examples are shown, but all are plotted in the [extended pdf version](https://github.com/wrf/oceanography_scripts/blob/master/images/russell1928_vertical_migration_data.6pages.pdf).
 

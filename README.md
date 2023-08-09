@@ -1,5 +1,5 @@
-# oceanography_scripts
-oceanography code
+# oceanography scripts #
+Code covering various topics in oceanography
 
 ## replot of historical codfish landings ##
 Historical estimates of [codfish](https://en.wikipedia.org/wiki/Atlantic_cod) landings from [Alexander 2009](https://doi.org/10.1111/j.1467-2979.2009.00334.x), making use of modern data and values of [MSY/SSB](https://repository.library.noaa.gov/view/noaa/12856) from [NOAA/NMSF](https://apps-nefsc.fisheries.noaa.gov/rcb/publications/center-reference-documents.html) by [Mayo 2008](https://repository.library.noaa.gov/view/noaa/3632). Their data suggest that there truly were significantly more fish in the sea during the 19th century, rapidly decreasing during the industrial age.
@@ -156,4 +156,4 @@ Plot of Temperature-Salinity diagram from [WOCE](https://en.wikipedia.org/wiki/W
 
 `Rscript ts_diagram_example.R`
 
-![woce_p17n_t-s_diagram_v1.png](https://github.com/wrf/oceanography_scripts/blob/master/images/woce_p17n_t-s_diagram_v1.png)
+![plot of temperature and salinity at WOCE station p17n](https://github.com/wrf/oceanography_scripts/blob/master/images/woce_p17n_t-s_diagram_v2.png)

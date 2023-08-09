@@ -129,7 +129,8 @@ server <- function(input, output) {
     selected_samples = arrange(sample_data, observed_on )
     leafletProxy("worldMap", data=selected_samples) %>%
       clearMarkers() %>%
-      addCircleMarkers(lng=selected_samples$longitude , lat=selected_samples$latitude ,
+      addCircleMarkers(lng=ifelse(selected_samples$coordinates_obscured=="true", selected_samples$private_longitude, selected_samples$longitude), 
+                       lat=ifelse(selected_samples$coordinates_obscured=="true", selected_samples$private_latitude, selected_samples$latitude),
                        fillColor= colorFactor(c("#777777","#26aade","#0577ff"), 
                                               domain = c("casual","needs_id","research") )(selected_samples$quality_grade),
                        fillOpacity=0.5 ,
@@ -138,6 +139,8 @@ server <- function(input, output) {
                        popup = selected_samples$sample_labels )
   }) # end observe
 
+  
+  
   # draw map
   output$worldMap <- renderLeaflet({
     leaflet( options=leafletOptions( minZoom=2, worldCopyJump=TRUE, preferCanvas=TRUE ) ) %>% 

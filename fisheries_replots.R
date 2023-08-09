@@ -70,9 +70,7 @@ ggsave(filename = "~/git/oceanography_scripts/images/spearfish_catch_tab2_from_c
 
 spfish_table4_file = "~/git/oceanography_scripts/data/coll_2004_table4.tab"
 spfish_table4 = read.table(spfish_table4_file, header = TRUE, sep = "\t")
-
-spfish_table4
-ggplot( data=spfish_table4 , aes(x=Year, y=Mean_weight) ) +
+gp = ggplot( data=spfish_table4 , aes(x=Year, y=Mean_weight) ) +
   theme(legend.position="none",
         panel.background = element_rect(fill = "#e4ecfb"),
         axis.text=element_text(size=16),
@@ -86,5 +84,8 @@ ggplot( data=spfish_table4 , aes(x=Year, y=Mean_weight) ) +
   scale_y_continuous(limits = c(0,30), expand = c(0,0) ) +
   geom_point( color="#000a5a", size=6, alpha=0.8) +
   geom_errorbar( aes(x=Year, ymin=Minimum_weight, ymax=Maximum_weight), color="#000a5a", size=1, alpha=0.3)
+gp
+ggsave(filename = "~/git/oceanography_scripts/images/spearfish_catch_tab4_from_coll2004.pdf", plot = gp, device ="pdf" , width = 8, height = 5, units = "in")
+ggsave(filename = "~/git/oceanography_scripts/images/spearfish_catch_tab4_from_coll2004.png", plot = gp, device ="png" , width = 8, height = 5, units = "in", dpi = 90)
 
 #

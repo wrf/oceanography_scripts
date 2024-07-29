@@ -1,5 +1,5 @@
 # pyrate_viewer/app.R
-# last updated 2021-06-16
+# last updated 2024-07-29
 #
 # plots results from PyRate: 
 # https://github.com/dsilvestro/PyRate
@@ -8,6 +8,7 @@
 library(shiny)
 library(ggplot2)
 library(dplyr)
+library(scales)
 
 # read taxa for table display
 taxon_data_file = "~/git/oceanography_scripts/pyrate_viewer/data/test_data.txt"
@@ -36,7 +37,8 @@ geo_periods = data.frame(period_starts, period_ends, period_y1, period_y2, perio
 
 # begin app
 ui <- fluidPage(
-    titlePanel("Diversity through Time"),
+    titlePanel(h1("Diversity through Time v1.0", style="font-weight:bold;"), 
+            windowTitle="Diversity through Time v1.0"),
     fluidRow(
             # this draws the upper plot, which can be brushed to show a zoomed in version below
             # also shows the geological periods
@@ -68,7 +70,7 @@ server <- function(input, output) {
         if (!is.null( input$zoomTime_brush ) ) {
         filter(taxon_data, max_age >= input$zoomTime_brush$xmin , min_age <= input$zoomTime_brush$xmax)
         } else {
-        print("Select area on lower plot to display taxa")
+        print("No taxa selected ; Select area on lower plot to display taxa")
         }
         #str(input$zoomTime_brush)
         #str(input$zoomHover)
@@ -79,6 +81,7 @@ server <- function(input, output) {
     output$mainTimeline <- renderPlot({
         ggplot(data=ltt_data, aes(x=time, y=diversity)) +
             theme_bw() +
+            labs(subtitle = "Select a range to zoom the lower plot.") + 
             scale_y_continuous(expand = c(0.0, 0.5)) +
             scale_x_reverse(expand = c(0,0), limits=c(max_time,0) ) +
             geom_ribbon(aes(ymin=m_div, ymax=M_div), fill="#44cd88") +
@@ -92,11 +95,14 @@ server <- function(input, output) {
         # draw roughly the same plot as above
         zgg = ggplot(ltt_data, aes(x=time, y=diversity)) +
             theme_bw() +
+            labs(subtitle = "Select a range to display taxa.") + 
             geom_ribbon(aes(ymin=m_div, ymax=M_div), fill="#44cd88") +
-            geom_line(size=1, colour="#08672b")
+            geom_line(size=1, colour="#08672b") +
+            annotate( geom="rect", xmin=period_starts, xmax=period_ends, ymin=period_y1, ymax=period_y2, fill=period_color)
+        
         # add zoom limits if top plot is brushed, otherwise set to default view
         if (!is.null(input$mainTime_brush) ) {
-            zgg = zgg + scale_x_reverse(expand = c(0,0), limits=c(input$mainTime_brush$xmax, input$mainTime_brush$xmin) )
+            zgg = zgg + scale_x_reverse(expand = c(0,0), limits=c(input$mainTime_brush$xmax, input$mainTime_brush$xmin), oob=squish )
         } else {
             zgg = zgg + scale_x_reverse(expand = c(0,0), limits=c(max_time,0) )
         }

@@ -134,6 +134,11 @@ Replots of some of the data from [Wang 2019](http://dx.doi.org/10.1038/s41586-01
 
 ![preindustrial.map_integrated_N_fix.png](https://github.com/wrf/oceanography_scripts/blob/master/images/preindustrial.map_integrated_N_fix.png)
 
+## sea level rise app ##
+Version 1.0 of an interactive [ShinyApp](https://rstudio.github.io/leaflet/index.html) map using [leaflet](https://leafletjs.com/) showing sea level rise around the world.
+
+![screenshot of Sea Level Riser v1](https://github.com/wrf/oceanography_scripts/blob/master/sealevel_rise/sea_level_riser_v1_screenshot_over_london.jpg)
+
 ## secchi disk plot ##
 Plot of [Secchi disk](https://en.wikipedia.org/wiki/Secchi_disk) data from [NOAA National Centers for Environmental Information](https://www.ncei.noaa.gov/data/oceans/woa/WOD/DATA_SUBSETS/). This was in the format of a .csv file containing 463875 casts, and required little post-processing.
 

@@ -1,17 +1,18 @@
 # iNaturalist/app.R
 # make interactive map of iNaturalist samples in Leaflet
 # exported using the iNaturalist csv data download
-# last updated 2023-06-22
+# last updated 2024-10-30
 
 library(shiny)
 library(leaflet)
 library(dplyr)
 
 # current host of this file at:
-inputfilename = "~/git/oceanography_scripts/data/observations-337199.csv"
+inputfilename = "~/git/oceanography_scripts/data/inaturalist_observations-337199.csv.gz"
 
-print(paste("# Reading", inputfilename))
+print(paste("# Reading", inputfilename, Sys.time() ))
 sample_data = read.csv(inputfilename)
+print(paste("# File contains", nrow(sample_data), "samples", Sys.time() ))
 
 names(sample_data)
 #  [1] "id"                               "observed_on_string"              
@@ -35,7 +36,7 @@ names(sample_data)
 # [37] "common_name"                      "iconic_taxon_name"               
 # [39] "taxon_id"  
 
-print( "# Building point popup labels" ) #
+print( paste("# Building point popup labels", Sys.time() ) ) #
 # could use "url" column instead
 sample_link_string = paste0("<b><i><a href='https://www.inaturalist.org/observations/", 
                             sample_data[["id"]] ,"'>", 
@@ -52,7 +53,7 @@ sample_labels <- paste(sep = "<br/>",
 # add labels as columns
 sample_data = cbind(sample_data, sample_labels)
 
-print( "# Starting user interface" )
+print( paste("# Starting user interface", Sys.time() ) )
 # begin actual shiny code
 ui <- fluidPage(
   
@@ -116,7 +117,7 @@ server <- function(input, output) {
   
   get_tileset_choice = reactive({
     if (input$tileset == "tonerlite") {
-      providers$Stamen.TonerLite }
+      providers$Stadia.StamenTonerLite }
     else if (input$tileset == "esriocean") {
       providers$Esri.OceanBasemap }
     else if (input$tileset == "esrisatellite") {
@@ -154,7 +155,7 @@ server <- function(input, output) {
     if ( input$lineoverlay==TRUE ) {
       leafletProxy("worldMap", data=NULL) %>%
         removeTiles(layerId="overlaylines") %>%
-        addProviderTiles(providers$Stamen.TonerLines, layerId="overlaylines",
+        addProviderTiles(providers$Stadia.StamenTonerLines, layerId="overlaylines",
                          options = providerTileOptions(opacity = 0.9) )
     } else {
       leafletProxy("worldMap", data=NULL) %>%
@@ -166,7 +167,7 @@ server <- function(input, output) {
     if ( input$nameoverlay==TRUE ) {
       leafletProxy("worldMap", data=NULL) %>%
         removeTiles(layerId="overlaylabs") %>%
-        addProviderTiles(providers$Stamen.TonerLabels, layerId="overlaylabs",
+        addProviderTiles(providers$Stadia.StamenTonerLabels, layerId="overlaylabs",
                          options = providerTileOptions(opacity = 0.5) )
     } else {
       leafletProxy("worldMap", data=NULL) %>%

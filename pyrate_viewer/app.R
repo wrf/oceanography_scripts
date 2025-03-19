@@ -11,11 +11,11 @@ library(dplyr)
 library(scales)
 
 # read taxa for table display
-taxon_data_file = "~/git/oceanography_scripts/pyrate_viewer/data/test_data.txt"
+taxon_data_file = "~/git/oceanography_scripts/pyrate_viewer/data/Lithistida_pbdb_data.txt"
 taxon_data = read.table(taxon_data_file, header=TRUE)
 
 # read lineage diversity file from PyRate
-ltt_data_file = "~/git/oceanography_scripts/pyrate_viewer/data/test_data_1-6_Grj_se_est_ltt.txt"
+ltt_data_file = "~/git/oceanography_scripts/pyrate_viewer/data/Lithistida_pbdb_data_1-6_Grj_se_est_ltt.txt"
 ltt_data = read.table(file = ltt_data_file, header=TRUE)
 
 # set max time to Cambrian
